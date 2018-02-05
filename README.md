@@ -1,0 +1,1 @@
+# euromnis-object-example
