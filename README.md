@@ -1,4 +1,4 @@
-# EurOmnis-Object-Example
+# EurOmnis Object Class Example
 
 Library shows how to sub-class external objects and override and call external methods. It further demonstrates how one can implement custom notation properties, use $sendall for sending messages to class instances and how one can use tasks to encapsulate and manage class instances for specific jobs, i.e. editing a plain text or rich text document.
 
@@ -8,7 +8,7 @@ To test all features, this library further requires the OWrite external componen
 
 ## Contents
 
-### ObjectExample
+### EurOmnisObjectClass
 
 This folder contains the JSON source files for the Omnis library in Github.
 
