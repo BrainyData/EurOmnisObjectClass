@@ -1,0 +1,5 @@
+;  Enter your initialization code here
+Set reference refEditor to $cinst.$objs.OWrite
+Do inherited
+;  load the data
+Do refEditor.$loaddata()

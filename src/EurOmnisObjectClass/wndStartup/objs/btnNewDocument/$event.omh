@@ -1,0 +1,5 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	;  create a new task instance for every open document
+	;       ;; the task will encapsulate all objects that are opened within that task
+	;       ;; if the task closes, all encapsulated objects will be closed
+	Do $tasks.tskEditFile.$open('*','new')

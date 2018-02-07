@@ -1,0 +1,22 @@
+{
+	"ident": 1010,
+	"order": 3,
+	"properties": {
+		"cascade": "",
+		"checked": false,
+		"enabled": true,
+		"fontstyle": "kPlain",
+		"helpfile": 0,
+		"helptext": "",
+		"iconid": 0,
+		"macshortcutkey": "Cmnd+U",
+		"text": {
+			"type": 0,
+			"calc": "Underline"
+		},
+		"unixshortcutkey": "Ctrl+U",
+		"userinfo": "refEditor.$curunderline.$assign(not(refEditor.$curunderline))",
+		"users": "12345678",
+		"winshortcutkey": "Ctrl+U"
+	}
+}

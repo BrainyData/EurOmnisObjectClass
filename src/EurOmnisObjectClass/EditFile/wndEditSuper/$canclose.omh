@@ -1,0 +1,9 @@
+If refEditor.$modified
+	Yes/No message Document has changed (Cancel button) {Would you like to save the changes that you have made?}
+	If msgcancelled()
+		Quit method kFalse
+	Else If flag true
+		Do refEditor.$savedata()
+	End If
+End If
+Quit method kTrue

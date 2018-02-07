@@ -1,0 +1,58 @@
+{
+	"classtype": "kTask",
+	"internalversion": 53,
+	"tvardefs": [
+		{
+			"name": "OWRITE_TMP_VAR",
+			"order": 2,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000,
+			"desc": "Required for loading images in RTF and some other OWRite tasks"
+		},
+		{
+			"name": "tvObjEditFile",
+			"order": 1,
+			"type": "kObjectref",
+			"subtype": "objEditFile",
+			"sublen": 0,
+			"desc": "Object handling loading and saving disk file"
+		},
+		{
+			"name": "tvOWriteInstalled",
+			"order": 3,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"desc": "Will be true if OWrite is installed"
+		}
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ivEditorInstanceName",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "con('wnd',$cinst().$name)"
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2014-10-09 21:51:05",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2018-02-07 17:07:15",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

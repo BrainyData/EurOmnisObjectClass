@@ -1,0 +1,10 @@
+;  custom notation property for writing file data
+
+If $cinst.$isopen()
+	If tvOWriteInstalled
+		Do $cinst.$writefile(pData,0)
+	Else
+		Do $cinst.$writefile(chartoutf8(pData),0)
+	End If
+	Do $cinst.$setfilesize($cinst.$getposition)
+End If

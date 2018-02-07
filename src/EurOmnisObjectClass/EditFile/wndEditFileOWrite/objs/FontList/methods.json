@@ -1,0 +1,43 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "typeface",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$setfontfamily",
+		"ident": 1,
+		"order": 268451841,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "ref",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "typeface",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]
