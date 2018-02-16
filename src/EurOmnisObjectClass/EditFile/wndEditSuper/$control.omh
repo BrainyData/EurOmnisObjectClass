@@ -1,5 +1,0 @@
-On evClick
-	If $cobj().$name<>refEditor().$name
-		;  must be interface control (make sure focus returns to editor)
-		Calculate $cinst.$ctarget as refEditor
-	End If

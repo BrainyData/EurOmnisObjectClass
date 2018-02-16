@@ -1,3 +1,0 @@
-
-;  open window with introduction and document buttons
-Do $windows.wndStartup.$open('.',kWindowCenter)

@@ -1,4 +1,0 @@
-;  Enter your termination code here
-If $cinst.$isopen()
-	Do $cinst.$closefile()
-End If

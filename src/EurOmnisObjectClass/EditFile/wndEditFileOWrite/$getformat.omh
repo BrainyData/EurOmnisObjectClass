@@ -1,3 +1,0 @@
-;  custom window property (for reading)
-;  return the specified property from editor
-Quit method refEditor.$[pName]

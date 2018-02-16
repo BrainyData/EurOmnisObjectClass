@@ -1,6 +1,0 @@
-;  Enter your termination code here
-
-;  disable "CloseFile" menu item in main menu
-Do default
-Do $imenus.$sendall($sendallref.$redraw())
-;  Do $imenus.mnuMain.$objs.CloseFile.$enabled.$assign(kFalse)

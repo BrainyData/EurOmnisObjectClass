@@ -1,6 +1,0 @@
-On evClick
-	Send to trace log {$topwind = [$topwind().$name]}
-	If $topwind.$getformat.$cando
-		Do $topwind.$setformat($cobj().$name,not($cobj.$checked))
-		Do $cinst.$redraw()
-	End If

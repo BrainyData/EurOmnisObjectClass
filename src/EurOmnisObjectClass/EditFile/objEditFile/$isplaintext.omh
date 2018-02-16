@@ -1,5 +1,0 @@
-If tvOWriteInstalled
-	Quit method $cinst.$filedatatype=kWriFmtText
-Else
-	Quit method kTrue
-End If

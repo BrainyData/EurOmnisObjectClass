@@ -1,7 +1,0 @@
-
-;  our $loaddata must include the two colons to force a call to the
-;  external $loaddata function, without it we cause endless recursion
-Do $cfield.$::loaddata(tvObjEditFile.$filedata,tvObjEditFile.$filedatatype,kFalse,kWriTextFmtUTF8,kTrue)
-If tvObjEditFile.$filedatatype=kWriFmtText
-	Do $cfield.$isplaintext.$assign(kTrue)
-End If

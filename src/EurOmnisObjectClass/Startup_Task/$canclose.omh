@@ -1,8 +1,0 @@
-
-;  implements (attempts to) a controlled Quit/Exit
-
-;  send a message to all our document task instances to close
-Do $tasks.tskEditFile.$insts.$sendall($sendallref.$close())
-
-;  only return kTrue if all document tasks are closed
-Quit method $tasks.tskEditFile.$insts.$count()=0

@@ -1,3 +1,0 @@
-Calculate ivOrigData as tvObjEditFile.$filedata
-Calculate ivData as ivOrigData
-Do $cfield.$redraw()

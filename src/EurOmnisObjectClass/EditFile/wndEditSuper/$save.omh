@@ -1,3 +1,0 @@
-If refEditor.$modified
-	Do refEditor.$savedata()
-End If

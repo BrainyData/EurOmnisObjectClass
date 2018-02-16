@@ -1,2 +1,0 @@
-On evClick     ;; Event Parameters - pRow( Itemreference )
-	Do $cclass.$objs.btnOpenDocument.$methods.//$event//.$modify()

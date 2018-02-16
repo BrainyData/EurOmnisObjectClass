@@ -1,9 +1,0 @@
-
-Do refEditor.$startundo()
-Calculate refEditor.$curbold as ivTypefacesList.OmnisStyleBold
-Calculate refEditor.$curitalic as ivTypefacesList.OmnisStyleItalic
-Calculate refEditor.$curfont as ivTypefacesList.OmnisFontName
-Do refEditor.$endundo("Change Typeface")
-
-;  set focus back to OWrite
-Calculate $cinst.$ctarget as refEditor

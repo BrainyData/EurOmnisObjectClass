@@ -1,3 +1,0 @@
-;  Enter your initialization code here
-Set reference refEditor to $cinst.$objs.Editor
-Do inherited
