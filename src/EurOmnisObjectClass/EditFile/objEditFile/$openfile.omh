@@ -1,0 +1,25 @@
+;  inherited method syntax
+;  $openfile(cFilePath[,bReadonly=kFalse]) opens an existing file. cFilePath is the pathname of the file to be opened.
+
+;  make sure any open file is closed
+If $cinst.$isopen()
+	Do $cinst.$closefile()
+End If
+
+;  prompt for file
+If not(len(pFullName))
+	If tvOWriteInstalled
+		Do FileOps.$getfilename(pFullName,"Selecet file for editing"," Rich Text Format (.rtf)|*.rtf| Text File (.txt)|*.txt") Returns #F
+	Else
+		Do FileOps.$getfilename(pFullName,"Selecet file for editing"," Text File (.txt)|*.txt") Returns #F
+	End If
+Else
+	Calculate #F as kTrue
+End If
+If flag true
+	;  open our file for editing
+	Calculate ivFullName as pFullName
+	Quit method $inherited.$openfile(ivFullName,kFalse)
+Else
+	Quit method kFalse
+End If

@@ -1,0 +1,21 @@
+;  custom notation property for changing file content type (creates new empty file with new extension)
+
+If pDataType<>$cinst.$filedatatype
+	If tvOWriteInstalled
+		;  update extension of full name
+		Do FileOps.$splitpathname(ivFullName,drive,dir,name,ext)
+		Switch pDataType
+			Case kWriFmtDefault
+				Calculate newFullName as con(drive,dir,name,'.owr')
+			Case kWriFmtRTF
+				Calculate newFullName as con(drive,dir,name,'.rtf')
+			Case kWriFmtText
+				Calculate newFullName as con(drive,dir,name,'.txt')
+		End Switch
+		;  attempt to create file with new extension
+		Quit method $cinst.$createfile(newFullName)
+	Else
+		Quit method pDataType=1     ;; (value of kWriFmtText)
+	End If
+End If
+Quit method kTrue

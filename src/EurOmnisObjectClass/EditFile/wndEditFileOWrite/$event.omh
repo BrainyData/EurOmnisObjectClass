@@ -1,0 +1,10 @@
+On evToTop
+	Do $menus.mnuEditFileOWrite.$open() Returns ivFormatMenu
+	Quit event handler (Pass to next handler)
+On evWindowClick
+	If ivFormatMenu
+		Do ivFormatMenu.$close()
+	End If
+	Quit event handler (Pass to next handler)
+On default
+	Do inherited

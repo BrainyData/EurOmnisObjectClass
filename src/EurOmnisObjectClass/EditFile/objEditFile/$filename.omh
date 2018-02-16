@@ -1,0 +1,3 @@
+;  return file name and extension
+Do FileOps.$splitpathname(ivFullName,,,name,ext)
+Quit method con(name,ext)

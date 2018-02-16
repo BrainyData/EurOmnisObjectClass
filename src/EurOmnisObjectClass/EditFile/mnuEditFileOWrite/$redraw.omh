@@ -1,0 +1,10 @@
+;  redraw our menu lines basedon current formatting
+
+;  check our menu items by retrieving the value from the editor based on menu line object name
+;       ;; ignore menu lines that do not have a $name
+If $topwind.$getformat.$cando
+	Do $cinst.$objs.$sendall($sendallref.$enabled.$assign(kTrue)+$sendallref.$checked.$assign($topwind.$getformat($sendallref().$name)),len($sendallref.$text))
+Else
+	;  top window is notvalid editor window, uncheck and disable all
+	Do $cinst.$objs.$sendall($sendallref.$enabled.$assign(kFalse)+$sendallref.$checked.$assign(kFalse),len($sendallref.$text))
+End If

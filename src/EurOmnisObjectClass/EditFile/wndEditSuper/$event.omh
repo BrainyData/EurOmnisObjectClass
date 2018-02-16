@@ -1,0 +1,4 @@
+Send to trace log {[$cmethod().$name]: [pEventCode]}
+On evCloseBox
+	Do $ctask.$close()     ;; close our task to close all objects associated with this document
+	Quit event handler (Discard event)

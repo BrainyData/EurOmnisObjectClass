@@ -1,0 +1,10 @@
+On evFormatChanged
+	;  get current font lists from OWrite with the current font and typeface selected
+	Do $cfield.$getfontlist(ivFontList,$cfield.$curfont,$cfield.$curbold,$cfield.$curitalic,kFalse,kTrue)
+	Calculate ivTypefacesList as ivFontList.Typefaces
+	;  redraw interface
+	Redraw {FontList,TypefacesList,FontSize,AlignLeft,AlignCenter,AlignRight,AlignLeftRight,Bold,Italic,Underline}
+	Do $imenus.$sendall($sendallref.$redraw,$sendallref.$redraw.$cando)
+	Quit event handler (Pass to next handler)
+On evModified
+	Quit event handler (Pass to next handler)
